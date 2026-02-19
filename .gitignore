@@ -1,0 +1,29 @@
+# Data
+/data/
+*.csv
+*.parquet
+*.zip
+
+# Allow templates
+!templates/*.csv
+!templates/**/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+.ipynb_checkpoints/
+
+# dbt
+/dbt/target/
+/dbt/logs/
+
+# Airflow/logs
+/logs/
+/airflow/logs/
+
+# OS
+.DS_Store
+Thumbs.db

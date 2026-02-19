@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: ufc_raw
+    database: ufc-odds-ml
+    schema: ufc_raw
+    tables:
+      - name: UFC
+      - name: event_details
+      - name: fight_details
+      - name: fighter_details

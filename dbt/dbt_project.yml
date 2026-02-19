@@ -1,0 +1,19 @@
+name: "ufc_odds_ml"
+version: "1.0"
+config-version: 2
+
+profile: "ufc_odds_ml"
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  ufc_odds_ml:
+    +materialized: view

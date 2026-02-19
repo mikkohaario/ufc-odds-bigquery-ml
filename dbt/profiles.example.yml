@@ -1,0 +1,10 @@
+ufc_odds_ml:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: ufc-odds-ml
+      dataset: ufc_stg
+      threads: 4
+      location: EU

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_fighters
+    columns:
+      - name: fighter_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_fights
+    columns:
+      - name: fight_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_fights_enriched
+    columns:
+      - name: fight_id
+        tests:
+          - not_null
+          - unique
